@@ -27,19 +27,19 @@ import java.util.UUID;
 @RequestMapping("api/v1/")
 public class MatchedTransactionController {
 
-    String xeroTenantId = "";
+    String xeroTenantId = "";//To be filled
     String refreshToken = "";
     String clientId = "";
     String clientSecret = "";
     // XeroCredentials cred = new XeroCredentials(clientId, clientSecret, refreshToken, xeroTenantId);
-    String accessToken = "";
+    String accessToken = "";//To be filled
     XeroCredentials xeroCredentials = new XeroCredentials(xeroTenantId, accessToken);
 
-    String chargebeeSiteUrl = "";
-    String chargebeeApiKey = "";
+    String chargebeeSiteUrl = "";//To be filled
+    String chargebeeApiKey = "";//To be filled
     ChargebeeCredentials chargebeeCredentials = new ChargebeeCredentials(chargebeeSiteUrl, chargebeeApiKey);
 
-    String stripeApiKey = "";
+    String stripeApiKey = "";//To be filled
     StripeCredentials stripeCredentials = new StripeCredentials(stripeApiKey);
 
     Map<GatewayEnum, GatewayCredentials> gatewayCredentialsMap = new HashMap<>();
